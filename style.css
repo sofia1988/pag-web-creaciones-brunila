@@ -1,0 +1,118 @@
+
+
+
+:root {
+    --orange:#f14910;
+    --pink:#fd425f;
+    --shadow:2px 2px 5px #bebebe,
+    -2px -2px 5px #ffffff;
+    --gradient:linear-gradient(90deg, var(--orange), var(--pink));
+}
+
+
+* {
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    text-transform: capitalize;
+}
+*::selection {
+    background: var(--pink);
+    color: #fff;
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body {
+    background: #f9f9f9;
+}
+section {
+    min-height: 100vh;
+    padding: 0 9%;
+    padding-top: 7.5rem;
+}
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    border-radius: 5rem;
+    background: var(--gradient);
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem rgba(0,0, 0,1);
+    transition: all .3s linear;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border-bottom: 2px solid transparent;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    padding: 5px 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo img{
+    width: 80px;
+}
+.navbar a {
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 1.7rem;
+    color: var(--orange);
+}
+.navbar a:hover {
+    color: #000;
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image img {
+    width: 35vw;
+    animation: float 3s linear infinite;
+}
+@keyframes float {
+    0%, 100%{
+        transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(-3.5rem);
+    }
+}
+.home .content h3 {
+    font-size: 5.5rem;
+    font-weight: 700;
+    color:#000;
+    text-transform: uppercase;
+}
+.content h3 span {
+    color: var(--orange);
+    text-transform: uppercase;
+}
+.home .content p {
+    font-size: 1.7rem;
+    font-weight: 500;
+    color:var(--orange);
+    padding: 1rem 0;
+}
