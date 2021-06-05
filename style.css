@@ -94,13 +94,13 @@ header {
 }
 @keyframes float {
     0%, 100%{
-        transform: translateY(0rem);
+        transform: translatey(0rem);
     }
     50%{
-        transform: translateY(-3.5rem);
+        transform: translatey(-3.5rem);
     }
 }
-.home .content h3 {
+.content h3 {
     font-size: 5.5rem;
     font-weight: 700;
     color:#000;
@@ -110,9 +110,87 @@ header {
     color: var(--orange);
     text-transform: uppercase;
 }
-.home .content p {
+.content p {
     font-size: 1.7rem;
     font-weight: 500;
     color:var(--orange);
     padding: 1rem 0;
+}
+
+
+.main--conteiner{
+    width: 100%;
+    
+    margin:auto;
+    overflow: hidden;
+    background: #f2f2f2;
+    
+   
+}
+
+.background-title{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    padding: 60px 0;
+}
+
+.title {
+    font-size: 50px;
+}
+
+.contenedor--cars{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    justify-content: space-around;
+    
+}
+.icon {
+    width: 130px;
+    height: 130px;
+    align-items: center;
+    background-color: #f14910;
+    border-radius: 50%;
+}
+
+
+.card{
+   width: 29%;
+   background: #ffffff;
+   margin-bottom: 30px;
+   border-radius: 15px;
+   padding: 45px 30px 60px 30px;
+   transition: 0.5s;
+}
+.card:hover{
+   box-shadow: 0 4px 10px rgba(22, 25, 31, 0.26);
+}
+.card>i{
+   font-size: 30px;
+   color: #ffffff;
+   background: #f14910;
+   display: inline-block;
+   width: 70px;
+   height: 70px;
+   text-align: center;
+   padding-top: 20px;
+   border-radius: 50%;
+   box-shadow: 0 8px 32px rgba(223, 139, 61, 0.46);
+}
+.card>p{
+   font-weight: 100;
+   color: #f14910;
+   margin-top: 15px;
+   padding-bottom: 20px;
+}
+.card>a{
+   color: #000000;
+   font-weight:400;
+   text-decoration: none;
+}
+.card>a:hover{
+   color: #f14910;
+   transition: color .5s;
 }
