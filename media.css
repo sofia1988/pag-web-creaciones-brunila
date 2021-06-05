@@ -79,6 +79,32 @@
     .title {
         font-size: 35px;
     }
+    .contact__button .span-1 ,.span-2 ,.span-3  {
+        color: var(--orange);
+        font-size: 50px;
+        position: absolute;
+        
+      
+      }
+      .span-1 i {
+        margin-left: 180px;
+        margin-top: 15px;
+        transform: rotate(30deg);
+        opacity: 50%;
+      }
+      .span-2 i {
+        margin-top: 70px;
+        margin-left: 205px;
+        transform: rotate(40deg);
+        opacity: 50%;
+     }
+      .span-3 i {
+        margin-top: 140px ;
+        margin-left: 200px;
+        transform: rotate(50deg);
+        opacity: 50%;
+    
+  } 
 }
 @media (max-width:450px) {
     html {
