@@ -79,6 +79,25 @@
     .title {
         font-size: 35px;
     }
+    .circle-1  {
+        width: 20px;
+        height: 20px;
+        margin-left: 5px;
+        margin-top: -150px;
+     
+      }
+      .circle-2 {
+        width: 20px;
+        height: 20px;
+        margin-top: -150px;
+        margin-left: -155px;
+      }
+      .circle-3 {
+        width: 20px;
+        height: 20px;
+        margin-top:-125px ;
+        margin-left: -84px;
+      }
     .contact__button .span-1 ,.span-2 ,.span-3  {
         color: var(--orange);
         font-size: 50px;
